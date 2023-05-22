@@ -120,18 +120,16 @@ const App = () => {
           onChange={(event) => setShift(parseInt(event.target.value))}
         />
         <Button onClick={handleSubmit}>Submit</Button>
+
         <Typography variant='body1'>Text to Binary: {binary}</Typography>
-        <Typography variant='body1'>Swapped Binary: {swappedBinary}</Typography>
-        <Typography variant='body1'>
-          Binary to Text: {binaryToTextConversion}
-        </Typography>
         <Typography variant='body1'>
           Pre-Caesar Cipher: {preCaesarCipher}
         </Typography>
+
+        <Typography variant='body1'>Swapped Binary: {swappedBinary}</Typography>
         <Typography variant='body1'>
           Post-Caesar Cipher: {postCaesarCipher}
         </Typography>
-
         <TextField label='Output' multiline rows={4} value={output} />
       </Box>
     </Container>
